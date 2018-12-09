@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pruebas0</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .right{
+            margin-left: 100px;
+            margin-right: 50px;
+            padding: 30px 0px 0px 20px;
+            
+        }
+        .left{
+            display: grid;  
+            color: black;
+            grid-column: 1/span 5;
+            grid-row: 1/span 1;
+            font-size: 20px;
+            justify-content: start;
+            padding: 30px 0px 0px 20px;
+            font-size:calc(5px + 0.5vw);
+
+        }
+        .h{
+            
+            font-weight: bold;
+            grid-column: 6/ span 1;
+            font-size:calc(5px + 0.5vw);
+
+        } 
+        .t{
+            
+            font-weight: bold;
+            grid-column: 7/ span 1; 
+            font-size:calc(5px + 0.5vw);
+        }
+        .a{
+            
+            font-weight: bold;
+            grid-column: 8/ span 1;
+            font-size:calc(5px + 0.5vw); 
+        }
+        .b{
+          
+            font-weight: bold;
+            grid-column: 9/ span 1;
+            font-size:calc(5px + 0.5vw);
+        }
+        .p{
+            margin-left: 60px;
+            display: grid;
+        }
+        header{
+            
+            display: grid;
+            grid-template: 200px / repeat(8,1fr);
+
+        }
+        section{
+            grid-gap: 10px;
+            display: grid;
+            grid-template: 300px 100px /600px;
+            
+        }
+
+        .titulos{
+            color:white;
+            font-size: calc(50px + 5vw);
+            font-weight: bold;
+            grid-row: 1 /span 1;
+            justify-content: center;
+            align-content: center;
+            padding: 15px;
+        }
+
+        .text{
+            color:white;
+            font-size: calc(10px + 0.8vw);
+            grid-row: 2 /span 1;
+            align-content: center;
+            padding: 15px;
+        }
+
+        .btn{
+            padding: 3px;
+            justify-content: center;
+            border-radius: 10px 10px 10px 10px;
+            font-weight: bold;
+            margin-left: 80px;
+            background: white;
+            color: black;
+            height: calc(15px + 3vw);
+            width: calc(60px + 3vh);
+            font-size: calc(15px + 0.1vw);
+            grid-row: 3 /span 1;
+            align-content: center;
+            margin-top: 40px;
+        }
+
+        body{
+            display: grid;
+            grid-gap: 20px ;
+            background-image: url("pastel2.jpg");
+            background-repeat:  no-repeat;
+            background-size: cover;           
+        }
+
+        @media screen and (max-width : 800px){
+        }
+        @media screen and (max-width : 360px){
+            section{
+                grid-template: 150px 50px 10px /300px; 
+                margin-bottom: 250px;
+                justify-items: center;
+                
+            }
+            header{
+                display: grid;
+                grid-template: 50px / repeat(8,11vw);
+                max-height: 50px;
+            }
+            body{
+                height: 99vh;
+            }
+            .left{
+                grid-column: 1/ span 4;
+
+            }
+            .a {
+                margin: 0px;
+                grid-row: 1 /span 1;
+                grid-column: 5/span 1;
+            }
+            .h { margin: 0px;
+                grid-row: 1 /span 1;
+                grid-column: 6/span 1;
+            }
+            .t { margin: 0px;
+                grid-row: 1 /span 1;
+                grid-column: 7/span 1;
+            }
+            .b { margin: 0px;
+                grid-row: 1 /span 1;
+                grid-column: 8/span 1;
+            }
+            .right{
+                margin-left: -30px;
+            }
+            .p{
+                margin-left:0px;
+            }
+            
+            
+        }
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="right h">HOME</div>
+        <div class="right t">TRAVEL</div>
+        <div class="right a">ABOUT</div>
+        <div class="right b">BOOKING</div>
+        <div class="left">nostrud</div>
+    </header>
+
+    <section>
+        <div class="p titulos">Fishing</div>
+        <div class="p text">New in the Aliquip network un Scandinavion Fishing who offer the diferent fully guided packages in the area </div>
+        <div class="p btn">Read more</div>
+
+    </section>
+</body>
+</html>
